@@ -79,7 +79,7 @@ const Assurance: React.FC<ResetProps> = ({ match }) => {
                             onClick={() => getItemData(avion)} 
                             key={avion.id}>
                             <IonLabel>
-                              <h2>{avion.id}</h2>
+                              <h2>{avion.numero}</h2>
                               <ul></ul>
                             </IonLabel>
                             {/* <IonLabel>
