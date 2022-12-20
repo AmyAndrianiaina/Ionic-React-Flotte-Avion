@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "c164a50c-915c-41d8-89bb-63ab7883cb3d",
+		"name": "Flotte Avion",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\":\"fitia@gmail.com\",\r\n    \"password\":\"fitiamdp\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "springrestavion-production.up.railway.app/user",
+					"host": [
+						"springrestavion-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Avions avec le details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoiZml0aWFAZ21haWwuY29tIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTY3MTU1MDI1MiwiZXhwIjoxNjcxNTUwODUyfQ.uw_mdLD1PXlyJPchnzA18Z6-9jV3bJIWVW7isopgLGFASX6K3czbmGhihO4oJUXAiUgpWTHc7uh43MoOaXkgdQ",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "springrestavion-production.up.railway.app/rest/avions",
+					"host": [
+						"springrestavion-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"rest",
+						"avions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Details Avions By Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoiZml0aWFAZ21haWwuY29tIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTY3MTU1MDI1MiwiZXhwIjoxNjcxNTUwODUyfQ.uw_mdLD1PXlyJPchnzA18Z6-9jV3bJIWVW7isopgLGFASX6K3czbmGhihO4oJUXAiUgpWTHc7uh43MoOaXkgdQ",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "springrestavion-production.up.railway.app/rest/avions/1",
+					"host": [
+						"springrestavion-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"rest",
+						"avions",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Avions Dans l assurance est expires dans 1 mois",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoiZml0aWFAZ21haWwuY29tIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTY3MTU1MDI1MiwiZXhwIjoxNjcxNTUwODUyfQ.uw_mdLD1PXlyJPchnzA18Z6-9jV3bJIWVW7isopgLGFASX6K3czbmGhihO4oJUXAiUgpWTHc7uh43MoOaXkgdQ",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://springrestavion-production.up.railway.app/rest/avions/assurance/1mois",
+					"protocol": "https",
+					"host": [
+						"springrestavion-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"rest",
+						"avions",
+						"assurance",
+						"1mois"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Avions Dans l assurance est expires dans 3 mois",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoiZml0aWFAZ21haWwuY29tIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTY3MTU1MDI1MiwiZXhwIjoxNjcxNTUwODUyfQ.uw_mdLD1PXlyJPchnzA18Z6-9jV3bJIWVW7isopgLGFASX6K3czbmGhihO4oJUXAiUgpWTHc7uh43MoOaXkgdQ",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "https://springrestavion-production.up.railway.app/rest/avions/assurance/3mois",
+					"protocol": "https",
+					"host": [
+						"springrestavion-production",
+						"up",
+						"railway",
+						"app"
+					],
+					"path": [
+						"rest",
+						"avions",
+						"assurance",
+						"3mois"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
